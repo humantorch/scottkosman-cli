@@ -125,6 +125,31 @@ npm run lint
 npm run format
 ```
 
+### Publishing
+
+The project includes automated publishing scripts:
+
+```bash
+# Publish with patch version bump (1.0.0 -> 1.0.1)
+npm run publish:patch
+
+# Publish with minor version bump (1.0.0 -> 1.1.0)
+npm run publish:minor
+
+# Publish with major version bump (1.0.0 -> 2.0.0)
+npm run publish:major
+
+# Or use the script directly
+./scripts/publish.sh patch
+```
+
+These scripts will:
+1. Bump the version number
+2. Build the project
+3. Publish to npm
+4. Create a git tag
+5. Push changes to GitHub
+
 ### Project Structure
 
 ```
