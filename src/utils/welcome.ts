@@ -51,11 +51,15 @@ const menuItems: MenuItem[] = [
     description: 'See what I had for lunch'
   },
   {
+    name: '🔧 This CLI Repository',
+    value: 'https://github.com/humantorch/scottkosman-cli',
+    description: 'See how this CLI was built (TypeScript, Commander.js, etc.)'
+  },
+  {
     name: '📧 Email Me',
     value: 'mailto:kosman.scott@gmail.com',
     description: 'Email? In 2025? I do check this, I promise.'
   },
-
 ];
 
 export async function showWelcome(): Promise<void> {

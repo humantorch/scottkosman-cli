@@ -88,6 +88,7 @@ The CLI provides easy access to:
 - 🔑 **1Password**: Where I work
 - 📜 **Current Resume**: Check out what I've done in the past
 - 📸 **Instagram**: See what I had for lunch
+- 🔧 **This CLI Repository**: See how this CLI was built (TypeScript, Commander.js, etc.)
 - 📧 **Email Me**: Email? In 2025? I do check this, I promise
 
 ## 👨‍💼 About Scott
