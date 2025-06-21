@@ -63,7 +63,7 @@ const menuItems: MenuItem[] = [
 ];
 
 export async function showWelcome(): Promise<void> {
-  // Clear the console
+  // Clear and display everything ONCE
   console.clear();
 
   // Display image (if available)
@@ -117,9 +117,8 @@ export async function showWelcome(): Promise<void> {
   console.log();
 
   // Show interactive menu
+  console.log(chalk.cyan('🔗 Quick Links - Select a link to open:\n'));
   try {
-    console.log(chalk.cyan('🔗 Quick Links - Select a link to open:\n'));
-    
     while (true) {
       const { selectedUrl } = await inquirer.prompt([
         {
@@ -141,20 +140,15 @@ export async function showWelcome(): Promise<void> {
         }
       ]);
 
-      if (selectedUrl !== 'exit') {
-        console.log(chalk.green(`\n🚀 Opening: ${selectedUrl}`));
-        
-        // Open the URL in the default browser
-        await open(selectedUrl);
-        
-        console.log(chalk.gray('URL opened in your default browser!'));
-        console.log(chalk.cyan('\n🔗 Quick Links - Select another link or exit:\n'));
-      } else {
+      if (selectedUrl === 'exit') {
         console.log(chalk.gray('\n👋 Thanks for using Scott Kosman CLI!'));
         break;
       }
+
+      console.log(chalk.green(`\n🚀 Opening: ${selectedUrl}`));
+      await open(selectedUrl);
+      console.log(chalk.gray('URL opened in your default browser!'));
     }
-    
   } catch (error) {
     if (error instanceof Error) {
       console.error(chalk.red('Error opening URL:'), error.message);
