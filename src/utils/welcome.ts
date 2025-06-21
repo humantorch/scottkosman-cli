@@ -36,6 +36,16 @@ const menuItems: MenuItem[] = [
     description: 'Join my Professional Network™'
   },
   {
+    name: '🔑 1Password',
+    value: 'https://1password.com',
+    description: 'Where I work'
+  },
+  {
+    name: '📜 Current Resume',
+    value: 'https://docs.google.com/document/d/1gcEzsNHWAllGH9mt6bfjie900B-rQNiatwdHiRj_Yog/edit?tab=t.0#heading=h.f5t1zjbkvcg2',
+    description: 'Check out what I\'ve done in the past'
+  },
+  {
     name: '📸 Instagram',
     value: 'https://instagram.com/humantorch',
     description: 'See what I had for lunch'
@@ -45,11 +55,7 @@ const menuItems: MenuItem[] = [
     value: 'mailto:kosman.scott@gmail.com',
     description: 'Email? In 2025? I do check this, I promise.'
   },
-  {
-    name: '🔑 1Password',
-    value: 'https://1password.com',
-    description: 'Where I work'
-  }
+
 ];
 
 export async function showWelcome(): Promise<void> {
