@@ -63,11 +63,11 @@ export async function showWelcome(): Promise<void> {
   console.clear();
 
   // Display image (if available)
-  const imagePath = path.join(__dirname, '../../assets/scott.jpeg');
+  const imagePath = path.join(__dirname, '../../assets/scott.png');
   if (fs.existsSync(imagePath)) {
     try {
       const imageBuffer = fs.readFileSync(imagePath);
-      const image = await terminalImage.buffer(imageBuffer, { width: '10%', height: 'auto' });
+      const image = await terminalImage.buffer(imageBuffer, { width: 20, height: 'auto' });
       console.log(image.trim());
     } catch (e) {
       // Ignore image errors, continue
