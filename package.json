@@ -1,0 +1,66 @@
+{
+  "name": "scottkosman",
+  "version": "1.0.0",
+  "description": "Scott Kosman CLI - A modern command-line interface",
+  "main": "dist/index.js",
+  "bin": {
+    "scottkosman": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "chmod +x dist/index.js",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "command-line",
+    "terminal",
+    "scott-kosman"
+  ],
+  "author": "Scott Kosman",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^9.2.12",
+    "open": "^10.1.2",
+    "ora": "^7.0.1",
+    "terminal-image": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/inquirer": "^9.0.7",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/humantorch/scottkosman-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/humantorch/scottkosman-cli/issues"
+  },
+  "homepage": "https://github.com/humantorch/scottkosman-cli#readme"
+}
