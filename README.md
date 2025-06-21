@@ -85,9 +85,10 @@ The CLI provides easy access to:
 - 🙋🏻‍♂️ **How To Scott**: My "Manager README", useful info if you currently do or want to work with/for me
 - 🌐 **GitHub Profile**: If you're reading this you probably already know what GitHub is
 - 🏢 **LinkedIn Profile**: Join my Professional Network™
+- 🔑 **1Password**: Where I work
+- 📜 **Current Resume**: Check out what I've done in the past
 - 📸 **Instagram**: See what I had for lunch
 - 📧 **Email Me**: Email? In 2025? I do check this, I promise
-- 🔑 **1Password**: Where I work
 
 ## 👨‍💼 About Scott
 
