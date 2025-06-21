@@ -5,7 +5,9 @@ A modern, interactive command-line interface built with TypeScript that showcase
 ## 🚀 Features
 
 - **Interactive Welcome Experience**: Beautiful ASCII art with gradient styling and terminal image display
+- **Professional Bio**: Displays Scott's current role and background information
 - **Quick Links Menu**: Selectable list of external URLs that open in your default browser
+- **Persistent Menu**: Loop back to the menu after opening links - no need to restart
 - **Modern CLI Architecture**: Built with TypeScript, Commander.js, and modern Node.js practices
 - **Professional Branding**: Custom styling with chalk, figlet, and gradient effects
 
@@ -53,8 +55,8 @@ scottkosman
 This will display:
 - Scott's profile image
 - ASCII art title with gradient effects
-- Welcome message with project information
-- Interactive menu of external links
+- Professional bio and background information
+- Interactive menu of external links (loops until you choose to exit)
 
 ### Available Commands
 
@@ -79,13 +81,17 @@ scottkosman init
 
 The CLI provides easy access to:
 
-- 📝 **Blog/Website**: Personal website and blog
-- 🙋🏻‍♂️ **How To Scott**: Manager README with useful information
-- 🌐 **GitHub Profile**: Code repositories and contributions
-- 💼 **LinkedIn Profile**: Professional network
-- 📸 **Instagram**: Personal updates and photos
-- 📧 **Email**: Direct contact via email
-- 🔑 **1Password**: Current workplace
+- 📝 **Blog/Website**: Visit my personal website
+- 🙋🏻‍♂️ **How To Scott**: My "Manager README", useful info if you currently do or want to work with/for me
+- 🌐 **GitHub Profile**: If you're reading this you probably already know what GitHub is
+- 🏢 **LinkedIn Profile**: Join my Professional Network™
+- 📸 **Instagram**: See what I had for lunch
+- 📧 **Email Me**: Email? In 2025? I do check this, I promise
+- 🔑 **1Password**: Where I work
+
+## 👨‍💼 About Scott
+
+Toronto-based Engineering Manager at 1Password, 20+ year vet of the technology, marketing, and digital strategy world. A recovering front-end developer who pivoted to management back in 2014, I now enjoy leading teams building the next generation of stuff you do on this "internet" thing. He/him.
 
 ## 🛠️ Development
 

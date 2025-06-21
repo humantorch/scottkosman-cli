@@ -18,20 +18,20 @@ const menuItems: MenuItem[] = [
   {
     name: '📝 Blog/Website',
     value: 'https://scottkosman.com',
-    description: 'Visit my personal website and blog'
+    description: 'Visit my personal website'
   },
   {
     name: '🙋🏻‍♂️ How To Scott',
     value: 'https://scottkosman.com/post/readme/',
-    description: 'My "Manager README", useful info if you currently do or want to work with/for me.'
+    description: 'My "Manager README", useful info if you currently do or want to work with/for me'
   },
   {
     name: '🌐 GitHub Profile',
     value: 'https://github.com/humantorch',
-    description: 'If you\'re reading this you probably already know what GitHub is.'
+    description: 'If you\'re reading this you probably already know what GitHub is'
   },
   {
-    name: '💼 LinkedIn Profile',
+    name: '🏢 LinkedIn Profile',
     value: 'https://linkedin.com/in/scottkosman',
     description: 'Join my Professional Network™'
   },
@@ -61,8 +61,8 @@ export async function showWelcome(): Promise<void> {
   if (fs.existsSync(imagePath)) {
     try {
       const imageBuffer = fs.readFileSync(imagePath);
-      const image = await terminalImage.buffer(imageBuffer, { width: '10%' });
-      console.log(image);
+      const image = await terminalImage.buffer(imageBuffer, { width: '10%', height: 'auto' });
+      console.log(image.trim());
     } catch (e) {
       // Ignore image errors, continue
     }
@@ -78,8 +78,11 @@ export async function showWelcome(): Promise<void> {
   // Apply gradient to the title
   const gradientTitle = gradient(['#ff6b6b', '#4ecdc4', '#45b7d1'])(title);
 
+  // Display everything
+  console.log(gradientTitle);
+
   // Create subtitle
-  const subtitle = chalk.cyan('Modern Command Line Interface');
+  const subtitle = chalk.bold('Toronto-based Engineering Manager at 1Password, 20+ year vet of the technology,\nmarketing, and digital strategy world. A recovering front-end developer who pivoted\nto management back in 2014, I now enjoy leading teams building the next generation\nof stuff you do on this "internet" thing. He/him.');
 
   // Create info box
   const info = boxen(
@@ -99,44 +102,47 @@ export async function showWelcome(): Promise<void> {
   );
 
   // Display everything
-  console.log(gradientTitle);
   console.log(subtitle);
-  console.log(info);
+  // console.log(info);
   console.log();
 
   // Show interactive menu
   try {
     console.log(chalk.cyan('🔗 Quick Links - Select a link to open:\n'));
     
-    const { selectedUrl } = await inquirer.prompt([
-      {
-        type: 'list',
-        name: 'selectedUrl',
-        message: 'Choose an option:',
-        choices: [
-          ...menuItems.map(item => ({
-            name: `${item.name}${item.description ? ` - ${item.description}` : ''}`,
-            value: item.value
-          })),
-          new inquirer.Separator(),
-          {
-            name: '❌ Exit',
-            value: 'exit'
-          }
-        ],
-        pageSize: 10
-      }
-    ]);
+    while (true) {
+      const { selectedUrl } = await inquirer.prompt([
+        {
+          type: 'list',
+          name: 'selectedUrl',
+          message: 'Choose an option:',
+          choices: [
+            ...menuItems.map(item => ({
+              name: `${item.name}${item.description ? ` - ${item.description}` : ''}`,
+              value: item.value
+            })),
+            new inquirer.Separator(),
+            {
+              name: '❌ Exit',
+              value: 'exit'
+            }
+          ],
+          pageSize: 10
+        }
+      ]);
 
-    if (selectedUrl !== 'exit') {
-      console.log(chalk.green(`\n🚀 Opening: ${selectedUrl}`));
-      
-      // Open the URL in the default browser
-      await open(selectedUrl);
-      
-      console.log(chalk.gray('URL opened in your default browser!'));
-    } else {
-      console.log(chalk.gray('\n👋 Thanks for using Scott Kosman CLI!'));
+      if (selectedUrl !== 'exit') {
+        console.log(chalk.green(`\n🚀 Opening: ${selectedUrl}`));
+        
+        // Open the URL in the default browser
+        await open(selectedUrl);
+        
+        console.log(chalk.gray('URL opened in your default browser!'));
+        console.log(chalk.cyan('\n🔗 Quick Links - Select another link or exit:\n'));
+      } else {
+        console.log(chalk.gray('\n👋 Thanks for using Scott Kosman CLI!'));
+        break;
+      }
     }
     
   } catch (error) {
