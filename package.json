@@ -1,11 +1,15 @@
 {
   "name": "scottkosman",
   "version": "1.0.0",
-  "description": "Scott Kosman CLI - A modern command-line interface",
+  "description": "A modern, interactive command-line interface for Scott Kosman with quick access to external links",
   "main": "dist/index.js",
   "bin": {
     "scottkosman": "./dist/index.js"
   },
+  "files": [
+    "dist",
+    "assets"
+  ],
   "scripts": {
     "build": "tsc",
     "postbuild": "chmod +x dist/index.js",
@@ -13,6 +17,7 @@
     "start": "node dist/index.js",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
+    "prepublishOnly": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src --ext .ts",
@@ -24,7 +29,9 @@
     "cli",
     "command-line",
     "terminal",
-    "scott-kosman"
+    "scott-kosman",
+    "personal-branding",
+    "interactive"
   ],
   "author": "Scott Kosman",
   "license": "MIT",

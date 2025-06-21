@@ -1,7 +1,6 @@
 import chalk from 'chalk';
 import figlet from 'figlet';
 import gradient from 'gradient-string';
-import boxen from 'boxen';
 import terminalImage from 'terminal-image';
 import path from 'path';
 import fs from 'fs';
@@ -84,26 +83,8 @@ export async function showWelcome(): Promise<void> {
   // Create subtitle
   const subtitle = chalk.bold('Toronto-based Engineering Manager at 1Password, 20+ year vet of the technology,\nmarketing, and digital strategy world. A recovering front-end developer who pivoted\nto management back in 2014, I now enjoy leading teams building the next generation\nof stuff you do on this "internet" thing. He/him.');
 
-  // Create info box
-  const info = boxen(
-    `${chalk.bold('Welcome!')}\n\n` +
-    `${chalk.gray('This is a modern CLI built with:')}\n` +
-    `${chalk.blue('• TypeScript')}\n` +
-    `${chalk.blue('• Commander.js')}\n` +
-    `${chalk.blue('• Chalk for styling')}\n` +
-    `${chalk.blue('• Modern Node.js')}\n\n` +
-    `${chalk.gray('Use')} ${chalk.yellow('scottkosman --help')} ${chalk.gray('to see available commands')}`,
-    {
-      padding: 1,
-      margin: 1,
-      borderStyle: 'round',
-      borderColor: 'cyan',
-    }
-  );
-
   // Display everything
   console.log(subtitle);
-  // console.log(info);
   console.log();
 
   // Show interactive menu
