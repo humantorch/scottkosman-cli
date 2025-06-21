@@ -16,7 +16,7 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
-    name: '📝 Blog/Website',
+    name: '💻 scottkosman.com',
     value: 'https://scottkosman.com',
     description: 'Visit my personal website'
   },
@@ -63,7 +63,7 @@ export async function showWelcome(): Promise<void> {
   console.clear();
 
   // Display image (if available)
-  const imagePath = path.join(__dirname, '../../assets/scott.jpg');
+  const imagePath = path.join(__dirname, '../../assets/scott.jpeg');
   if (fs.existsSync(imagePath)) {
     try {
       const imageBuffer = fs.readFileSync(imagePath);

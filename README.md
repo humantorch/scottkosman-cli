@@ -81,7 +81,7 @@ scottkosman init
 
 The CLI provides easy access to:
 
-- 📝 **Blog/Website**: Visit my personal website
+- 💻 **scottkosman.com**: Visit my personal website
 - 🙋🏻‍♂️ **How To Scott**: My "Manager README", useful info if you currently do or want to work with/for me
 - 🌐 **GitHub Profile**: If you're reading this you probably already know what GitHub is
 - 🏢 **LinkedIn Profile**: Join my Professional Network™
