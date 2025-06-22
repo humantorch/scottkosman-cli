@@ -10,10 +10,10 @@ export function infoCommand(program: Command): void {
     .action(() => {
       const info = boxen(
         `${chalk.bold.cyan('Scott Kosman CLI')}\n\n` +
-        `${chalk.gray('Version:')} ${chalk.white(version)}\n` +
-        `${chalk.gray('Node.js:')} ${chalk.white(process.version)}\n` +
-        `${chalk.gray('Platform:')} ${chalk.white(process.platform)}\n` +
-        `${chalk.gray('Architecture:')} ${chalk.white(process.arch)}\n\n` +
+        `${chalk.gray('Version:')} ${chalk.black(version)}\n` +
+        `${chalk.gray('Node.js:')} ${chalk.black(process.version)}\n` +
+        `${chalk.gray('Platform:')} ${chalk.black(process.platform)}\n` +
+        `${chalk.gray('Architecture:')} ${chalk.black(process.arch)}\n\n` +
         `${chalk.gray('Built with modern tools:')}\n` +
         `${chalk.blue('• TypeScript')}\n` +
         `${chalk.blue('• Commander.js')}\n` +
