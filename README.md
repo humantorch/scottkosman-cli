@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/scottkosman.svg)](https://www.npmjs.com/package/scottkosman)
 [![npm downloads](https://img.shields.io/npm/dm/scottkosman.svg)](https://www.npmjs.com/package/scottkosman)
-[![Build Status](https://github.com/humantorch/scottkosman-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/humantorch/scottkosman-cli/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node Version](https://img.shields.io/node/v/scottkosman.svg)](https://nodejs.org)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/humantorch/scottkosman-cli/pulls)
