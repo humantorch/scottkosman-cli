@@ -20,6 +20,9 @@ fi
 echo "📦 Bumping version ($VERSION_TYPE)..."
 npm version $VERSION_TYPE --no-git-tag-version
 
+# Run tests
+npm test
+
 # Build the project
 echo "🔨 Building project..."
 npm run build
