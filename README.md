@@ -127,6 +127,18 @@ npm run lint
 npm run format
 ```
 
+### Running Tests
+
+This project uses [Jest](https://jestjs.io/) and [ts-jest](https://kulshekhar.github.io/ts-jest/) for testing.
+
+```bash
+npm test
+```
+
+- Tests are located in `src/**/*.test.ts`
+- Menu logic and data are tested in isolation for reliability
+- To add more tests, create additional `*.test.ts` files
+
 ### Publishing
 
 The project includes automated publishing scripts:
