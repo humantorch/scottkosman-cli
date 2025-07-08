@@ -39,7 +39,7 @@ export async function showWelcome(): Promise<void> {
   console.log(gradientTitle);
 
   // Create subtitle
-  const subtitle = chalk.bold('Toronto-based Engineering Manager at 1Password, 20+ year vet of the technology,\nmarketing, and digital strategy world. A recovering front-end developer who pivoted\nto management back in 2014, I now enjoy leading teams building the next generation\nof stuff you do on this "internet" thing. He/him.');
+  const subtitle = chalk.bold('Started as a front-end dev when tables were still cool. Now I lead teams\nand coach managers at 1Password. 25 years deep in tech, and still choosing \npeople over process, clarity over chaos, and delivery over drama. He/him.');
 
   // Create info box (commented out for now, but can be reused later)
   // const info = boxen(
