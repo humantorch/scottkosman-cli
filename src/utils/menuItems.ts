@@ -32,7 +32,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     name: '📜 Current Resume',
-    value: 'https://docs.google.com/document/d/1gcEzsNHWAllGH9mt6bfjie900B-rQNiatwdHiRj_Yog/edit?tab=t.0#heading=h.f5t1zjbkvcg2',
+    value: 'https://docs.google.com/document/d/1gcEzsNHWAllGH9mt6bfjie900B-rQNiatwdHiRj_Yog/edit?usp=sharing',
     description: 'Check out what I\'ve done in the past'
   },
   {
