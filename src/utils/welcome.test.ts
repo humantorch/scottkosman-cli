@@ -6,6 +6,7 @@ describe('menuItems', () => {
     // Names in order (update if you change menu order)
     const expectedNames = [
       '💻 scottkosman.com',
+      '📝 Blog',
       '🙋🏻‍♂️ How To Scott',
       '🌐 GitHub Profile',
       '🏢 LinkedIn Profile',
