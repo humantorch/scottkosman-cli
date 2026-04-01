@@ -100,7 +100,7 @@ The CLI provides easy access to:
 
 ## 👨‍💼 About Scott
 
-Halifax-based Engineering Manager at 1Password, 20+ year vet of the technology, marketing, and digital strategy world. A recovering front-end developer who pivoted to management back in 2014, I now enjoy leading teams building the next generation of stuff you do on this "internet" thing. He/him.
+Halifax-based Engineering Manager at 1Password, 25+ year vet of the technology, marketing, and digital strategy world. A recovering front-end developer who pivoted to management back in 2014, I now enjoy leading teams building the next generation of stuff you do on this "internet" thing. He/him.
 
 ## 🛠️ Development
 

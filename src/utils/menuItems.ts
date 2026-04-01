@@ -53,6 +53,6 @@ export const menuItems: MenuItem[] = [
   {
     name: '📧 Email Me',
     value: 'mailto:kosman.scott@gmail.com',
-    description: 'Email? In 2025? I do check this, I promise.'
+    description: 'Email? In 2026? I do check this, I promise.'
   },
 ]; 
