@@ -88,6 +88,7 @@ scottkosman init
 The CLI provides easy access to:
 
 - 💻 **scottkosman.com**: Visit my personal website
+- ⚙️ **blackglass.me**: Where I build tools for technical people who think carefully about how they work
 - 📝 **Blog**: Blog posts I've written on leadership, management, and surviving in tech
 - 🙋🏻‍♂️ **How To Scott**: My "Manager README", useful info if you currently do or want to work with/for me
 - 🌐 **GitHub Profile**: If you're reading this you probably already know what GitHub is
