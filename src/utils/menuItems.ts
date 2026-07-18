@@ -11,6 +11,11 @@ export const menuItems: MenuItem[] = [
     description: 'Visit my personal website'
   },
   {
+    name: '⚙️ blackglass.me',
+    value: 'https://blackglass.me',
+    description: 'Where I build tools for technical people who think carefully about how they work'
+  },
+  {
     name: '📝 Blog',
     value: 'https://scottkosman.com/post/blog/',
     description: 'Blog posts on leadership, management, and surviving in tech'
