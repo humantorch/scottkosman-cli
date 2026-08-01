@@ -8,6 +8,8 @@
 
 A modern, interactive command-line interface built with TypeScript that showcases Scott Kosman's professional information and provides quick access to external links.
 
+> Want your own version of this CLI? Check out [personal-cli-generator](https://github.com/humantorch/personal-cli-generator), a template you can fork and fill in with your own content.
+
 ## 🚀 Features
 
 - **Interactive Welcome Experience**: Beautiful ASCII art with gradient styling and terminal image display
