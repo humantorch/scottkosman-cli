@@ -23,16 +23,16 @@ A modern, interactive command-line interface built with TypeScript that showcase
 
 ## 📦 Installation
 
-### Global Installation (Recommended)
-
-```bash
-npm install -g scottkosman
-```
-
-### Run with npx (No Installation Required)
+### Run with npx (Recommended, No Installation Required)
 
 ```bash
 npx scottkosman
+```
+
+### Global Installation
+
+```bash
+npm install -g scottkosman
 ```
 
 ### Local Development
