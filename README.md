@@ -10,7 +10,7 @@ A modern, interactive command-line interface built with TypeScript that showcase
 
 > Want your own version of this CLI? Check out [npx-yournamehere](https://github.com/humantorch/npx-yournamehere), a template you can fork and fill in with your own content.
 
-![Scott Kosman CLI screenshot](assets/scottkosman-cli.png)
+<img src="assets/scottkosman-cli.png" width="500">
 
 ## 🚀 Features
 
