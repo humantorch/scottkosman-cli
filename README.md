@@ -10,6 +10,8 @@ A modern, interactive command-line interface built with TypeScript that showcase
 
 > Want your own version of this CLI? Check out [personal-cli-generator](https://github.com/humantorch/personal-cli-generator), a template you can fork and fill in with your own content.
 
+![Scott Kosman CLI screenshot](assets/scottkosman-cli.png)
+
 ## 🚀 Features
 
 - **Interactive Welcome Experience**: Beautiful ASCII art with gradient styling and terminal image display
