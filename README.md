@@ -201,6 +201,10 @@ scottkosman-cli/
 - **Terminal-image**: Display images in terminal
 - **Open**: Open URLs in default browser
 
+## ⚠️ Known Issues
+
+- **Profile image doesn't render on some Windows terminals**: The welcome image is drawn using colored Unicode block characters, which requires truecolor ANSI support. On some Windows setups (including Windows Terminal in certain configurations) it may fail to render. This doesn't affect any other functionality, the CLI still works normally without the image.
+
 ## 📝 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
