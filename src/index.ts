@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { Command } from 'commander';
+import { Command, CommanderError } from 'commander';
 import chalk from 'chalk';
 import { version } from '../package.json';
 import { showWelcome } from './utils/welcome';
@@ -33,10 +33,13 @@ program.exitOverride();
 try {
   program.parse();
 } catch (err) {
-  if (err instanceof Error) {
+  if (err instanceof CommanderError) {
+    process.exit(err.exitCode);
+  } else if (err instanceof Error) {
     console.error(chalk.red('Error:'), err.message);
+    process.exit(1);
   } else {
     console.error(chalk.red('An unexpected error occurred'));
+    process.exit(1);
   }
-  process.exit(1);
 } 
