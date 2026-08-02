@@ -203,7 +203,7 @@ scottkosman-cli/
 
 ## ⚠️ Known Issues
 
-- **Profile image doesn't render on some Windows terminals**: The welcome image is drawn using colored Unicode block characters, which requires truecolor ANSI support. On some Windows setups (including Windows Terminal in certain configurations) it may fail to render. This doesn't affect any other functionality, the CLI still works normally without the image.
+- **Profile image doesn't render on some Windows terminals**: The welcome image is drawn using colored Unicode block characters, which requires truecolor ANSI support. On some Windows setups (including Windows Terminal in certain configurations) it may fail to render. This doesn't affect any other functionality, the CLI still works normally without the image. Honestly, though, if you're using Windows by choice you kinda deserve lesser experiences, it's your own fault.
 
 ## 📝 License
 
