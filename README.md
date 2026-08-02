@@ -93,15 +93,14 @@ The CLI provides easy access to:
 
 - 💻 **scottkosman.com**: Visit my personal website
 - ⚙️ **blackglass.me**: Where I build tools for technical people who think carefully about how they work
-- 📝 **Blog**: Blog posts I've written on leadership, management, and surviving in tech
 - 🙋🏻‍♂️ **How To Scott**: My "Manager README", useful info if you currently do or want to work with/for me
-- 🌐 **GitHub Profile**: If you're reading this you probably already know what GitHub is
-- 🏢 **LinkedIn Profile**: Join my Professional Network™
-- 🔑 **1Password**: Where I work
+- 📝 **Blog**: Blog posts on leadership, management, and surviving in tech
 - 📜 **Current Resume**: Check out what I've done in the past
+- 🌐 **GitHub**: If you're reading this you probably already know what GitHub is
+- 🏢 **LinkedIn**: Join my Professional Network™
 - 📸 **Instagram**: See what I had for lunch
 - 🔧 **This CLI Repository**: See how this CLI was built (TypeScript, Commander.js, etc.)
-- 📧 **Email Me**: Email? In 2025? I do check this, I promise
+- 📧 **Email Me**: Email? In 2026? I do check this, I promise
 
 ## 👨‍💼 About Scott
 

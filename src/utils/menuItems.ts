@@ -16,34 +16,29 @@ export const menuItems: MenuItem[] = [
     description: 'Where I build tools for technical people who think carefully about how they work'
   },
   {
-    name: '📝 Blog',
-    value: 'https://scottkosman.com/post/blog/',
-    description: 'Blog posts on leadership, management, and surviving in tech'
-  },
-  {
     name: '🙋🏻‍♂️ How To Scott',
     value: 'https://scottkosman.com/post/readme/',
     description: 'My "Manager README", useful info if you currently do or want to work with/for me'
   },
   {
-    name: '🌐 GitHub Profile',
-    value: 'https://github.com/humantorch',
-    description: 'If you\'re reading this you probably already know what GitHub is'
-  },
-  {
-    name: '🏢 LinkedIn Profile',
-    value: 'https://linkedin.com/in/scottkosman',
-    description: 'Join my Professional Network™'
-  },
-  {
-    name: '🔑 1Password',
-    value: 'https://1password.com',
-    description: 'Where I work'
+    name: '📝 Blog',
+    value: 'https://scottkosman.com/post/blog/',
+    description: 'Blog posts on leadership, management, and surviving in tech'
   },
   {
     name: '📜 Current Resume',
     value: 'https://docs.google.com/document/d/1gcEzsNHWAllGH9mt6bfjie900B-rQNiatwdHiRj_Yog/edit?usp=sharing',
     description: 'Check out what I\'ve done in the past'
+  },
+  {
+    name: '🌐 GitHub',
+    value: 'https://github.com/humantorch',
+    description: 'If you\'re reading this you probably already know what GitHub is'
+  },
+  {
+    name: '🏢 LinkedIn',
+    value: 'https://linkedin.com/in/scottkosman',
+    description: 'Join my Professional Network™'
   },
   {
     name: '📸 Instagram',
